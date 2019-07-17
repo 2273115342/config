@@ -38,7 +38,7 @@ eureka:
 
 ribbon:
   ReadTimeout: 5000  #服建立连接后 最大的连接时间
-  ConnectTimeout: 3000  #务连接超时时间
+  ConnectTimeout: 1000  #务连接超时时间
 
 ### 开启hystrix断路器  timeoutInMilliseconds
 feign:
@@ -51,4 +51,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2000 #超时时间 缺省为1000
+            timeoutInMilliseconds: 7000 #超时时间 缺省为1000
