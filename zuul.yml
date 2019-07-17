@@ -12,32 +12,6 @@ eureka:
       defaultZone: http://127.0.0.1:8001/eureka,http://127.0.0.1:8002/eureka
 
 zuul:
-  ignored-services: "*"
   routes:
-    api-user:
-      serviceId: user
-      path: /user/**
-  max:
-    host:
-      connections: 5000
-  host:
-    socket-timeout-millis: 5000
-    connect-timeout-millis: 5000
-
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: true
-        isolation:
-          thread:
-            timeoutInMilliseconds: 50000
-
-ribbon:
-  ReadTimeout: 6000
-  ConnectTimeout: 3000
-  MaxAutoRetries: 0
-  MaxAutoRetriesNextServer: 0
-  eureka:
-    enabled: false
+    demouser.serviceId: user
+    demouser.path: /user/**

@@ -37,8 +37,8 @@ eureka:
     #instance-id: demo-user1-8020 #eureka服务地址别名配置
 
 ribbon:
-  ReadTimeout: 6000  #服建立连接后 最大的连接时间
-  ConnectTimeout: 3000  #服务连接超时时间
+  ReadTimeout: 5000  #服建立连接后 最大的连接时间
+  ConnectTimeout: 3000  #务连接超时时间
 
 ### 开启hystrix断路器  timeoutInMilliseconds
 feign:
@@ -51,4 +51,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 50000 #超时时间 缺省为1000
+            timeoutInMilliseconds: 2000 #超时时间 缺省为1000
