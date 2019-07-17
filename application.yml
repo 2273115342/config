@@ -4,6 +4,7 @@
 spring:
   application:
     name: user
+  profiles: dev #开发环境
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver  #mysql驱动包
@@ -52,3 +53,12 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 2000 #超时时间 缺省为1000
+
+
+---
+
+
+spring:
+  application:
+    name: user_test
+  profiles: test #测试环境
