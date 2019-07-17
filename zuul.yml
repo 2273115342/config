@@ -1,0 +1,12 @@
+﻿server:
+  port: 8040
+
+spring:
+  application:
+    name: zuul
+  profiles: dev #开发环境
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8001/eureka,http://127.0.0.1:8002/eureka
