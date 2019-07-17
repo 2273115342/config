@@ -38,7 +38,7 @@ eureka:
 
 ribbon:
   ReadTimeout: 5000  #服建立连接后 最大的连接时间
-  ConnectTimeout: 3000  #务连接超时时间
+  ConnectTimeout: 3000  #服务连接超时时间
 
 ### 开启hystrix断路器  timeoutInMilliseconds
 feign:
