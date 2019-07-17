@@ -51,4 +51,4 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 2000 #超时时间 缺省为1000
+            timeoutInMilliseconds: 5000 #超时时间 缺省为1000
