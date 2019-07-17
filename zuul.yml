@@ -15,3 +15,18 @@ zuul:
   routes:
     demouser.serviceId: user
     demouser.path: /user/**
+  connect-timeout-millis: 60000  #HTTP连接超时要比Hystrix的大
+  socket-timeout-millis: 60000   #socket超时
+
+ribbon:
+  ReadTimeout: 60000  #服建立连接后 最大的连接时间
+  ConnectTimeout: 3000  #务连接超时时间
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000 #超时时间 缺省为1000
