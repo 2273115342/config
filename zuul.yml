@@ -19,10 +19,10 @@ zuul:
       path: /user/**
   max:
     host:
-      connections: 10000
+      connections: 5000
   host:
-    socket-timeout-millis: 10000
-    connect-timeout-millis: 10000
+    socket-timeout-millis: 5000
+    connect-timeout-millis: 5000
 
 hystrix:
   command:
@@ -32,12 +32,12 @@ hystrix:
           enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 5000
 
 ribbon:
-  ReadTimeout: 5000
+  ReadTimeout: 6000
   ConnectTimeout: 3000
   MaxAutoRetries: 0
-  MaxAutoRetriesNextServer: 1
+  MaxAutoRetriesNextServer: 0
   eureka:
     enabled: false
