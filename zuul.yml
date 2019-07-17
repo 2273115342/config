@@ -16,3 +16,9 @@ zuul:
   routes:
     demouser.serviceId: user
     demouser.path: /user/**
+  max:
+    host:
+      connections: 500
+  host:
+    socket-timeout-millis: 5000
+    connect-timeout-millis: 5000
