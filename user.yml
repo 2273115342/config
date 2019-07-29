@@ -55,5 +55,5 @@ hystrix:
   threadpool:
     default:
       coreSize: 15
-      maxQueueSize: 1500
-      queueSizeRejectionThreshold: 1000
+      #maxQueueSize: 1500
+      #queueSizeRejectionThreshold: 1000
