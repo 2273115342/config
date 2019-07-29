@@ -54,7 +54,6 @@ hystrix:
             timeoutInMilliseconds: 7000 #超时时间 缺省为1000
   threadpool:
     default:
-      default:
       coreSize: 15
       maxQueueSize: 1500
       queueSizeRejectionThreshold: 1000
