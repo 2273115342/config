@@ -16,9 +16,12 @@ zuul:
     demouser: 
       serviceId: user
       path: /user/**
+  max:
+    host:
+      connections: 500
   host:
-    maxTotalConnections: 10000
-    maxPerRouteConnections: 10000
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
   semaphore:
         max-semaphores: 200
 
