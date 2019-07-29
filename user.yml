@@ -54,4 +54,4 @@ hystrix:
             timeoutInMilliseconds: 7000 #超时时间 缺省为1000
   threadpool:
     default:
-      coreSize: 100
+      coreSize: 50
