@@ -23,7 +23,7 @@ zuul:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
   semaphore:
-        max-semaphores: 200
+        max-semaphores: 200  #最高并发线程数
 
 ribbon:
   ReadTimeout: 60000  #服建立连接后 最大的连接时间
