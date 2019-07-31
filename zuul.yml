@@ -37,3 +37,10 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000 #超时时间 缺省为1000
+            
+####开启所有服务端点刷新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
